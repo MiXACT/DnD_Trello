@@ -1,0 +1,1 @@
+[![Netology AHJ](https://github.com/MiXACT/DnD_Trello/actions/workflows/web.yml/badge.svg)](https://github.com/MiXACT/DnD_Trello/actions/workflows/web.yml)
