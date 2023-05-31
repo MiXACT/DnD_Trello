@@ -1,0 +1,142 @@
+body {
+	background-color: #1d86d1;
+}
+
+.work_panel {
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+.block {
+	display: inline-block;
+	box-sizing: border-box;
+	width: 420px;
+	height: 100%;
+	background-color: rgb(230, 225, 225);
+	padding: 5px;
+	vertical-align: top;
+	border-radius: 5px;
+}
+
+.btn {
+	display: block;
+	border: none;
+	margin-top: 5px;
+}
+
+.card {
+	display: block;
+	position: relative;
+	box-sizing: border-box;
+	width: 400px;
+	padding: 4px 20px 4px 4px;
+	margin: 5px;
+	background-color: azure;
+	border: 1px black solid;
+	border-radius: 5px;
+	word-wrap: break-word;
+}
+
+.grab {
+	cursor: grab;
+}
+
+.grab:active {
+	cursor: grabbing;
+}
+
+.cardCross {
+	display: none;
+	position: absolute;
+	border: transparent;
+	color: rgb(88, 88, 88);
+	background-color: rgb(230, 225, 225);
+	cursor: pointer;
+	font-weight: 500;
+	width: 20px;
+	height: 20px;
+	right: 2px;
+	top: 2px;
+}
+
+.cardCross::after {
+	content: '\2716';
+}
+
+.card:hover .cardCross {
+	display: block;
+}
+
+.dragged {
+	display: block;
+	word-wrap: break-word;
+	box-sizing: border-box;
+	padding: 4px 20px 4px 4px;
+	background-color: azure;
+	border: 1px black solid;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 999;
+    /* pointer-events: none; */
+    background: #fff;
+	width: 400px;
+}
+
+.cardFill {
+	display: block;
+}
+
+.textField {
+	display: block;
+	box-sizing: border-box;
+	margin: 5px auto 5px auto;
+	resize: none;
+}
+
+.addCardBtn {
+	display: inline-block;
+	background-color: #65c178;
+	border-radius: 5px;
+	border: transparent;
+	color: #fff;
+	cursor: pointer;
+	font-weight: 700;
+	font-size: 14px;
+	width: 100px;
+	height: 30px;
+	margin-top: 2px;
+}
+
+.addCardBtn::after {
+	content: 'Add card';
+}
+
+.crossBtn {
+	display: inline-block;
+	background-color: rgb(230, 225, 225);
+	border: transparent;
+	color: rgb(88, 88, 88);
+	cursor: pointer;
+	font-weight: 700;
+	width: 30px;
+	height: 30px;
+	margin-top: 2px;
+	margin-left: 2px;
+}
+
+.crossBtn::after {
+	content: '\2716';
+}
+
+.empty {
+	display: block;
+	position: relative;
+	box-sizing: border-box;
+	width: 400px;
+	margin: 5px;
+	background-color: rgb(252, 248, 248);
+	border: 1px rgb(252, 248, 248);
+	border-radius: 5px;
+}
